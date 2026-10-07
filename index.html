@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aayush Gadhavi | B.Tech CSE (AI &amp; ML) Portfolio</title>
+  <meta name="description" content="Personal portfolio of Aayush Gadhavi, 1st Year B.Tech CSE (AI & ML) student (Batch 2026-2030). Passionate about Python, Java, and Problem Solving techniques.">
+  <meta name="author" content="Aayush Gadhavi">
+  
+  <!-- Relative link to CSS stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts (with system font fallbacks in CSS for offline/local view) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Background Glow & Grid Ornaments -->
+  <div class="bg-decorations" aria-hidden="true">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="grid-overlay"></div>
+  </div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="site-header" id="header">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo" aria-label="Aayush Gadhavi Home">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-name">Aayush</span>
+        <span class="logo-accent">.AI</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#problem-solving" class="nav-link">Problem Solving</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Utilities: Theme Toggle & Mobile Menu Button -->
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark/light theme" title="Toggle theme">
+          <!-- Sun Icon (shown in dark mode) -->
+          <svg class="theme-icon sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <!-- Moon Icon (shown in light mode) -->
+          <svg class="theme-icon moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+
+        <a href="#contact" class="btn btn-sm btn-primary nav-cta">Let's Connect</a>
+
+        <button id="mobile-menu-btn" class="mobile-toggle" aria-label="Toggle mobile menu" aria-expanded="false" aria-controls="nav-menu">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            <span>Batch 2026 – 2030 • 1st Year Engineering</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Aayush Gadhavi</span>
+          </h1>
+
+          <div class="typewriter-container">
+            <span class="typewriter-prefix">Aspiring </span>
+            <span id="typewriter-text" class="typewriter-dynamic"></span>
+            <span class="typewriter-cursor">|</span>
+          </div>
+
+          <p class="hero-description">
+            B.Tech 1st Year student in <strong>Computer Science and Engineering (AI &amp; ML)</strong>. 
+            Passionate about mastering <strong>Python</strong>, <strong>Java</strong>, and building a solid foundation in 
+            <strong>algorithmic problem solving techniques</strong> and intelligent computing.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Projects</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+            <a href="#problem-solving" class="btn btn-secondary">
+              <span>Try Algorithm Lab</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+            </a>
+            <button id="resume-btn" class="btn btn-outline" type="button">
+              <span>Resume</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+            </button>
+          </div>
+
+          <div class="hero-socials">
+            <span class="social-label">Find me on:</span>
+            <div class="social-links">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub Profile">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn Profile">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+              </a>
+              <a href="mailto:aayushgadhavi.dev@gmail.com" class="social-icon" aria-label="Email Me">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </a>
+              <a href="#problem-solving" class="social-icon" aria-label="Problem Solving Profile">
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Interactive Terminal Card -->
+        <div class="hero-visual">
+          <div class="terminal-card">
+            <div class="terminal-header">
+              <div class="terminal-buttons">
+                <span class="term-btn term-close"></span>
+                <span class="term-btn term-minimize"></span>
+                <span class="term-btn term-maximize"></span>
+              </div>
+              <div class="terminal-title">aayush@cse-aiml: ~</div>
+              <div class="terminal-badge">Python 3.12 / Java 21</div>
+            </div>
+            <div class="terminal-body">
+              <div class="term-line">
+                <span class="term-prompt">$</span>
+                <span class="term-cmd">whoami</span>
+              </div>
+              <div class="term-response">
+                <span class="highlight-cyan">&gt; Aayush Gadhavi</span>
+                <span class="highlight-gray">[B.Tech CSE - AI &amp; ML | Batch 2026-2030]</span>
+              </div>
+
+              <div class="term-line">
+                <span class="term-prompt">$</span>
+                <span class="term-cmd">cat skills.json</span>
+              </div>
+              <div class="term-response code-block">
+                <span class="json-bracket">{</span><br>
+                &nbsp;&nbsp;<span class="json-key">"languages"</span>: [<span class="json-str">"Python"</span>, <span class="json-str">"Java"</span>],<br>
+                &nbsp;&nbsp;<span class="json-key">"specialization"</span>: <span class="json-str">"Artificial Intelligence &amp; ML"</span>,<br>
+                &nbsp;&nbsp;<span class="json-key">"core_interest"</span>: <span class="json-str">"Problem Solving Techniques"</span>,<br>
+                &nbsp;&nbsp;<span class="json-key">"status"</span>: <span class="json-str">"Building solid fundamentals &amp; projects"</span><br>
+                <span class="json-bracket">}</span>
+              </div>
+
+              <div class="term-line">
+                <span class="term-prompt">$</span>
+                <span class="term-cmd">python3 -c "solve_problems(passion=True)"</span>
+              </div>
+              <div class="term-response">
+                <span class="highlight-green">✔ Output: Ready to engineer smart algorithmic solutions!</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating Stat Cards -->
+          <div class="floating-badge badge-1">
+            <div class="badge-icon">🐍</div>
+            <div class="badge-info">
+              <span class="badge-val">Python</span>
+              <span class="badge-sub">Logic &amp; AI Scripting</span>
+            </div>
+          </div>
+
+          <div class="floating-badge badge-2">
+            <div class="badge-icon">☕</div>
+            <div class="badge-info">
+              <span class="badge-val">Java</span>
+              <span class="badge-sub">OOP &amp; Problem Solving</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Driven by Curiosity, Grounded in Logic</h2>
+          <p class="section-subtitle">A glimpse into who I am, what I study, and what excites me about technology.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card glass-panel">
+            <div class="about-avatar-wrapper">
+              <div class="avatar-placeholder">
+                <span class="avatar-initials">AG</span>
+                <div class="avatar-glow"></div>
+              </div>
+              <div class="avatar-caption">
+                <h3>Aayush Gadhavi</h3>
+                <p>B.Tech 1st Year (2026–2030)</p>
+                <span class="badge-pill">CSE - AI &amp; ML</span>
+              </div>
+            </div>
+            <div class="about-text">
+              <p>
+                Welcome to my digital space! I am a 1st-year undergraduate student pursuing a <strong>Bachelor of Technology in Computer Science and Engineering with a specialization in Artificial Intelligence and Machine Learning</strong> (Batch 2026–2030).
+              </p>
+              <p>
+                From writing my first programs in <strong>Python</strong> and understanding Object-Oriented principles in <strong>Java</strong>, I quickly developed an intense fascination for <strong>problem solving techniques</strong> and computational logic. I love taking complex, messy challenges and decomposing them into clean, optimized step-by-step algorithms.
+              </p>
+              <p>
+                My current mission in my engineering journey is to build an unbreakable foundation in data structures, time and space complexity, mathematics for machine learning, and hands-on software development.
+              </p>
+            </div>
+          </div>
+
+          <div class="highlights-grid">
+            <div class="highlight-card">
+              <div class="highlight-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                </svg>
+              </div>
+              <div class="highlight-details">
+                <h4>Core Languages</h4>
+                <p>Hands-on coding experience in <strong>Python</strong> and <strong>Java</strong>, emphasizing clean syntax, modular design, and OOP.</p>
+              </div>
+            </div>
+
+            <div class="highlight-card">
+              <div class="highlight-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M12 6v6l4 2"></path>
+                </svg>
+              </div>
+              <div class="highlight-details">
+                <h4>Academic Batch</h4>
+                <p>Enrolled in <strong>Batch 2026 – 2030</strong>, setting steady milestones for academic excellence and open-source contributions.</p>
+              </div>
+            </div>
+
+            <div class="highlight-card">
+              <div class="highlight-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+              <div class="highlight-details">
+                <h4>Problem Solving Passion</h4>
+                <p>Deep interest in algorithmic thinking, recursion, search strategies, time/space trade-offs, and competitive problem solving.</p>
+              </div>
+            </div>
+
+            <div class="highlight-card">
+              <div class="highlight-icon">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <div class="highlight-details">
+                <h4>AI &amp; ML Vision</h4>
+                <p>Exploring machine learning concepts, linear algebra, probability, and how data models power next-generation intelligent applications.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="section bg-subtle" id="skills">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-tag">Technical Arsenal</span>
+          <h2 class="section-title">Skills &amp; Competencies</h2>
+          <p class="section-subtitle">Technologies and methodologies I am actively learning and applying.</p>
+        </div>
+
+        <!-- Filter tabs for skills -->
+        <div class="filter-tabs" role="tablist" aria-label="Skill categories">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All Skills</button>
+          <button class="filter-btn" data-filter="languages" role="tab" aria-selected="false">Languages</button>
+          <button class="filter-btn" data-filter="problem-solving" role="tab" aria-selected="false">Problem Solving &amp; AI</button>
+          <button class="filter-btn" data-filter="web-tools" role="tab" aria-selected="false">Web &amp; Tools</button>
+        </div>
+
+        <div class="skills-grid" id="skills-grid">
+          <!-- Python -->
+          <div class="skill-card" data-category="languages">
+            <div class="skill-card-top">
+              <div class="skill-icon python-icon">
+                <span>PY</span>
+              </div>
+              <div class="skill-meta">
+                <h3>Python</h3>
+                <span class="skill-level">Core Competency</span>
+              </div>
+            </div>
+            <p class="skill-desc">Fluent in scripting, data structures, modular programming, and problem decomposition.</p>
+            <div class="skill-progress-bar" aria-label="Python proficiency 85%">
+              <div class="skill-progress-fill" style="width: 85%;"></div>
+            </div>
+            <div class="skill-tags">
+              <span>OOP</span>
+              <span>Automation</span>
+              <span>Data Analysis</span>
+              <span>Algorithms</span>
+            </div>
+          </div>
+
+          <!-- Java -->
+          <div class="skill-card" data-category="languages">
+            <div class="skill-card-top">
+              <div class="skill-icon java-icon">
+                <span>JV</span>
+              </div>
+              <div class="skill-meta">
+                <h3>Java</h3>
+                <span class="skill-level">Core Competency</span>
+              </div>
+            </div>
+            <p class="skill-desc">Object-oriented programming, class design, encapsulation, inheritance, and standard collections.</p>
+            <div class="skill-progress-bar" aria-label="Java proficiency 80%">
+              <div class="skill-progress-fill" style="width: 80%;"></div>
+            </div>
+            <div class="skill-tags">
+              <span>Core Java</span>
+              <span>OOPs</span>
+              <span>Collections</span>
+              <span>Exception Handling</span>
+            </div>
+          </div>
+
+          <!-- Problem Solving & DSA -->
+          <div class="skill-card" data-category="problem-solving">
+            <div class="skill-card-top">
+              <div class="skill-icon dsa-icon">
+                <span>PS</span>
+              </div>
+              <div class="skill-meta">
+                <h3>Problem Solving</h3>
+                <span class="skill-level">Primary Focus</span>
+              </div>
+            </div>
+            <p class="skill-desc">Analyzing constraints, designing step-by-step algorithms, searching &amp; sorting, and recursion.</p>
+            <div class="skill-progress-bar" aria-label="Problem Solving proficiency 82%">
+              <div class="skill-progress-fill" style="width: 82%;"></div>
+            </div>
+            <div class="skill-tags">
+              <span>Binary Search</span>
+              <span>Sorting</span>
+              <span>Time Complexity</span>
+              <span>Logic Building</span>
+            </div>
+          </div>
+
+          <!-- AI & ML Foundations -->
+          <div class="skill-card" data-category="problem-solving">
+            <div class="skill-card-top">
+              <div class="skill-icon aiml-icon">
+                <span>AI</span>
+              </div>
+              <div class="skill-meta">
+                <h3>AI &amp; ML Foundations</h3>
+                <span class="skill-level">Specialization (1st Year)</span>
+              </div>
+            </div>
+            <p class="skill-desc">Fundamentals of intelligent systems, basic predictive workflows, statistics, and linear algebra.</p>
+            <div class="skill-progress-bar" aria-label="AI & ML Foundations proficiency 70%">
+              <div class="skill-progress-fill" style="width: 70%;"></div>
+            </div>
+            <div class="skill-tags">
+              <span>Machine Learning</span>
+              <span>Linear Algebra</span>
+              <span>Model Evaluation</span>
+            </div>
+          </div>
+
+          <!-- Web Development (HTML/CSS/JS) -->
+          <div class="skill-card" data-category="web-tools">
+            <div class="skill-card-top">
+              <div class="skill-icon web-icon">
+                <span>WEB</span>
+              </div>
+              <div class="skill-meta">
+                <h3>Frontend Basics</h3>
+                <span class="skill-level">Practical Skills</span>
+              </div>
+            </div>
+            <p class="skill-desc">Building responsive, accessible web layouts using modern HTML5, CSS3, and JavaScript.</p>
+            <div class="skill-progress-bar" aria-label="Web Development proficiency 75%">
+              <div class="skill-progress-fill" style="width: 75%;"></div>
+            </div>
+            <div class="skill-tags">
+              <span>HTML5</span>
+              <span>CSS3 Flex/Grid</span>
+              <span>Vanilla JS</span>
+              <span>Responsive UI</span>
+            </div>
+          </div>
+
+          <!-- Dev Tools & Git -->
+          <div class="skill-card" data-category="web-tools">
+            <div class="skill-card-top">
+              <div class="skill-icon git-icon">
+                <span>GIT</span>
+              </div>
+              <div class="skill-meta">
+                <h3>Tools &amp; Environment</h3>
+                <span class="skill-level">Daily Workflow</span>
+              </div>
+            </div>
+            <p class="skill-desc">Version control using Git &amp; GitHub, VS Code, debugging, and terminal command line.</p>
+            <div class="skill-progress-bar" aria-label="Developer Tools proficiency 78%">
+              <div class="skill-progress-fill" style="width: 78%;"></div>
+            </div>
+            <div class="skill-tags">
+              <span>Git</span>
+              <span>GitHub</span>
+              <span>VS Code</span>
+              <span>CLI / Terminal</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE PROBLEM SOLVING LAB -->
+    <section class="section" id="problem-solving">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-tag">Interactive Feature</span>
+          <h2 class="section-title">Problem Solving Lab: Search Visualizer</h2>
+          <p class="section-subtitle">
+            Because I am very interested in problem solving techniques, here is an interactive algorithmic lab comparing <strong>Linear Search</strong> vs <strong>Binary Search</strong>.
+          </p>
+        </div>
+
+        <div class="algo-lab-card glass-panel">
+          <div class="algo-controls">
+            <div class="algo-input-group">
+              <label for="algo-target-input">Select or Type Target Number (0 - 99):</label>
+              <div class="input-action-row">
+                <input type="number" id="algo-target-input" min="1" max="95" value="42" placeholder="e.g. 42">
+                <button id="btn-run-search" class="btn btn-primary" type="button">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                  </svg>
+                  <span>Run Comparison</span>
+                </button>
+                <button id="btn-random-array" class="btn btn-secondary" type="button">Randomize Array</button>
+              </div>
+            </div>
+            
+            <div class="algo-stats-grid">
+              <div class="algo-stat-box">
+                <span class="stat-algo-name">Linear Search <small>(O(n))</small></span>
+                <span id="linear-steps-count" class="stat-highlight">0 steps</span>
+                <span id="linear-result-text" class="stat-sub">Waiting to run...</span>
+              </div>
+              <div class="algo-stat-box accent-box">
+                <span class="stat-algo-name">Binary Search <small>(O(log n))</small></span>
+                <span id="binary-steps-count" class="stat-highlight">0 steps</span>
+                <span id="binary-result-text" class="stat-sub">Waiting to run...</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visual Array Container -->
+          <div class="algo-visualizer">
+            <div class="visualizer-header">
+              <span class="visualizer-title">Sorted Array Memory View (Click any element to set target)</span>
+              <span id="algo-status-badge" class="algo-badge ready">Ready</span>
+            </div>
+            <div class="array-container" id="array-container" role="region" aria-label="Sorted Array Visual Elements">
+              <!-- Dynamically populated via script.js -->
+            </div>
+          </div>
+
+          <!-- Problem Solving Insights Footer -->
+          <div class="algo-insight-box">
+            <div class="insight-icon">💡</div>
+            <div class="insight-text">
+              <strong>Problem Solving Takeaway:</strong> Notice how <em>Binary Search</em> cuts the search space in half with every iteration (\(\log_2 N\)), making it exponentially faster than <em>Linear Search</em> for large datasets!
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="section bg-subtle" id="projects">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-tag">Portfolio Showcase</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Real-world applications of Python, Java, and algorithmic logic.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card">
+            <div class="project-image-banner">
+              <div class="project-code-preview">
+                <div class="code-preview-header">
+                  <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                  <span class="code-file-name">algorithm_visualizer.py</span>
+                </div>
+                <pre class="code-snippet"><code>def binary_search(arr, low, high, x):
+    if high >= low:
+        mid = (high + low) // 2
+        if arr[mid] == x: return mid
+        elif arr[mid] > x: return binary_search(arr, low, mid - 1, x)
+        else: return binary_search(arr, mid + 1, high, x)
+    return -1</code></pre>
+              </div>
+              <span class="project-category-tag">Python &amp; DSA</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Algorithmic Search &amp; Sort Toolkit</h3>
+              <p class="project-desc">
+                An interactive suite implementing core algorithms (Binary Search, Merge Sort, Quick Sort, Two-Pointer technique) with step-by-step execution analysis and time complexity metrics.
+              </p>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>Algorithms</span>
+                <span>Data Structures</span>
+                <span>Complexity Analysis</span>
+              </div>
+              <div class="project-links">
+                <button class="btn btn-sm btn-primary project-modal-trigger" data-project="0">View Details</button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <span>GitHub</span>
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <div class="project-image-banner">
+              <div class="project-code-preview">
+                <div class="code-preview-header">
+                  <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                  <span class="code-file-name">StudentManager.java</span>
+                </div>
+                <pre class="code-snippet"><code>public class StudentManager {
+    private Map<Integer, Student> records = new HashMap<>();
+    
+    public void addStudent(Student s) {
+        records.put(s.getId(), s);
+    }
+    public double calculateGPA(int id) { ... }
+}</code></pre>
+              </div>
+              <span class="project-category-tag">Java OOP</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Academic Record &amp; GPA Management</h3>
+              <p class="project-desc">
+                A robust Object-Oriented application in Java for managing student profiles, course credits, GPA computation, and sorted grade reports with file persistence.
+              </p>
+              <div class="project-tags">
+                <span>Java</span>
+                <span>OOP Concepts</span>
+                <span>Collections Framework</span>
+                <span>File I/O</span>
+              </div>
+              <div class="project-links">
+                <button class="btn btn-sm btn-primary project-modal-trigger" data-project="1">View Details</button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <span>GitHub</span>
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <div class="project-image-banner">
+              <div class="project-code-preview">
+                <div class="code-preview-header">
+                  <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                  <span class="code-file-name">ml_predictive_model.py</span>
+                </div>
+                <pre class="code-snippet"><code>import numpy as np
+# Exploratory AI Model
+X_train = np.array([...])
+weights = np.random.randn(X_train.shape[1])
+predictions = 1 / (1 + np.exp(-np.dot(X_train, weights)))
+loss = -np.mean(y * np.log(predictions))</code></pre>
+              </div>
+              <span class="project-category-tag">AI &amp; ML</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">AI Predictive Modeling &amp; EDA</h3>
+              <p class="project-desc">
+                An exploratory machine learning pipeline in Python demonstrating data preprocessing, mathematical loss calculations, gradient descent optimization, and classification metrics.
+              </p>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>NumPy</span>
+                <span>Machine Learning</span>
+                <span>Math for AI</span>
+              </div>
+              <div class="project-links">
+                <button class="btn btn-sm btn-primary project-modal-trigger" data-project="2">View Details</button>
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline">
+                  <span>GitHub</span>
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card">
+            <div class="project-image-banner">
+              <div class="project-code-preview">
+                <div class="code-preview-header">
+                  <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+                  <span class="code-file-name">index.html / style.css</span>
+                </div>
+                <pre class="code-snippet"><code>:root {
+  --primary-accent: #00d2ff;
+  --secondary-accent: #7928ca;
+  --surface-dark: #0f172a;
+}
+/* Responsive, Pure Vanilla Stack */</code></pre>
+              </div>
+              <span class="project-category-tag">Web Development</span>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Responsive Personal Portfolio</h3>
+              <p class="project-desc">
+                High-performance, accessible, and responsive personal website built cleanly with vanilla HTML5, modern CSS3, and JavaScript without external runtime dependencies.
+              </p>
+              <div class="project-tags">
+                <span>HTML5</span>
+                <span>CSS3 Variables</span>
+                <span>JavaScript</span>
+                <span>Responsive Design</span>
+              </div>
+              <div class="project-links">
+                <button class="btn btn-sm btn-primary project-modal-trigger" data-project="3">View Details</button>
+                <a href="#hero" class="btn btn-sm btn-outline">Live Demo</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION & TIMELINE SECTION -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-tag">Academic Background</span>
+          <h2 class="section-title">Education &amp; Milestones</h2>
+          <p class="section-subtitle">My academic path and ongoing undergraduate curriculum.</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+              </svg>
+            </div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-title">B.Tech in Computer Science &amp; Engineering (AI &amp; ML)</h3>
+                  <span class="timeline-institution">Undergraduate Engineering Degree</span>
+                </div>
+                <span class="timeline-date-badge">2026 – 2030 (Current)</span>
+              </div>
+              <p class="timeline-desc">
+                Currently in <strong>1st Year</strong> focusing on fundamentals of computer systems, algorithmic problem solving, object-oriented concepts in Java, scripting in Python, and mathematical foundations for Artificial Intelligence.
+              </p>
+              <div class="timeline-chips">
+                <span>Problem Solving Techniques</span>
+                <span>Data Structures (Foundations)</span>
+                <span>Python &amp; Java Programming</span>
+                <span>AI &amp; ML Specialization</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+              </svg>
+            </div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-title">Higher Secondary Education (12th Grade - Science)</h3>
+                  <span class="timeline-institution">PCM Stream (Physics, Chemistry, Mathematics)</span>
+                </div>
+                <span class="timeline-date-badge">Completed 2026</span>
+              </div>
+              <p class="timeline-desc">
+                Cultivated strong analytical thinking, calculus, discrete concepts, and logic building skills that sparked my passion for pursuing Computer Science and Artificial Intelligence.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section bg-subtle" id="contact">
+      <div class="container">
+        <div class="section-heading text-center">
+          <span class="section-tag">Get in Touch</span>
+          <h2 class="section-title">Let's Connect &amp; Collaborate</h2>
+          <p class="section-subtitle">Whether you have questions, project ideas, or want to talk algorithms and AI, feel free to reach out!</p>
+        </div>
+
+        <div class="contact-wrapper">
+          <!-- Contact Info Cards -->
+          <div class="contact-info-column">
+            <div class="info-card glass-panel">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                  <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+              </div>
+              <div>
+                <h4>Name</h4>
+                <p>Aayush Gadhavi</p>
+              </div>
+            </div>
+
+            <div class="info-card glass-panel">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h4>Email</h4>
+                <a href="mailto:aayushgadhavi.dev@gmail.com" class="contact-link">aayushgadhavi.dev@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="info-card glass-panel">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                  <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                </svg>
+              </div>
+              <div>
+                <h4>Education &amp; Batch</h4>
+                <p>B.Tech 1st Year CSE (AI &amp; ML) • Batch 2026–2030</p>
+              </div>
+            </div>
+
+            <div class="info-card glass-panel">
+              <div class="info-icon">
+                <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+              <div>
+                <h4>Primary Interests</h4>
+                <p>Python, Java, Problem Solving Techniques, AI/ML</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form with Validation -->
+          <div class="contact-form-column glass-panel">
+            <form id="contact-form" class="contact-form" novalidate>
+              <h3 class="form-title">Send a Message</h3>
+              
+              <div class="form-group">
+                <label for="contact-name">Your Full Name <span class="required-star">*</span></label>
+                <input 
+                  type="text" 
+                  id="contact-name" 
+                  name="name" 
+                  placeholder="e.g. Alex Sharma" 
+                  required 
+                  autocomplete="name"
+                  minlength="2"
+                >
+                <span class="field-error" id="name-error" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email">Your Email Address <span class="required-star">*</span></label>
+                <input 
+                  type="email" 
+                  id="contact-email" 
+                  name="email" 
+                  placeholder="alex@example.com" 
+                  required 
+                  autocomplete="email"
+                >
+                <span class="field-error" id="email-error" role="alert"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-subject">Subject</label>
+                <input 
+                  type="text" 
+                  id="contact-subject" 
+                  name="subject" 
+                  placeholder="Collaboration / Project Inquiry"
+                  autocomplete="off"
+                >
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message">Message <span class="required-star">*</span></label>
+                <textarea 
+                  id="contact-message" 
+                  name="message" 
+                  rows="4" 
+                  placeholder="Hi Aayush, I'd like to discuss problem solving and..." 
+                  required
+                  minlength="10"
+                ></textarea>
+                <span class="field-error" id="message-error" role="alert"></span>
+              </div>
+
+              <button type="submit" id="contact-submit-btn" class="btn btn-primary btn-block">
+                <span>Send Message</span>
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+              <div id="form-toast" class="form-feedback-toast" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <a href="#hero" class="brand-logo footer-logo">
+          <span class="logo-bracket">&lt;</span>
+          <span class="logo-name">Aayush</span>
+          <span class="logo-accent">.AI</span>
+          <span class="logo-bracket">/&gt;</span>
+        </a>
+        <p class="footer-tagline">
+          B.Tech 1st Year CSE (AI &amp; ML) • Batch 2026–2030.<br>
+          Building problem solving techniques through Python &amp; Java.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#problem-solving">Problem Solving Lab</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-right">
+        <h4>Connect</h4>
+        <div class="social-links">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12z"/></svg>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <a href="mailto:aayushgadhavi.dev@gmail.com" class="social-icon" aria-label="Email">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </a>
+        </div>
+        <p class="copyright-text">
+          &copy; <span id="current-year"></span> Aayush Gadhavi. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP FLOATING BUTTON -->
+  <button id="back-to-top" class="back-to-top" aria-label="Scroll back to top" title="Back to top">
+    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- PROJECT DETAILS MODAL -->
+  <div id="project-modal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-window glass-panel">
+      <button class="modal-close-btn" id="modal-close-btn" aria-label="Close modal">&times;</button>
+      <div class="modal-body" id="modal-content">
+        <!-- Injected via script.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- RESUME PREVIEW MODAL -->
+  <div id="resume-modal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-window resume-window glass-panel">
+      <button class="modal-close-btn" id="resume-modal-close" aria-label="Close resume preview">&times;</button>
+      <div class="resume-preview-content">
+        <div class="resume-header">
+          <h2>Aayush Gadhavi</h2>
+          <p class="resume-sub">B.Tech 1st Year (CSE - AI &amp; ML) • Batch 2026–2030</p>
+          <p class="resume-contact">aayushgadhavi.dev@gmail.com • Python &amp; Java Developer • Problem Solving Enthusiast</p>
+        </div>
+        <div class="resume-section">
+          <h3>Academic Summary</h3>
+          <p><strong>Bachelor of Technology in Computer Science &amp; Engineering (AI &amp; ML)</strong> (2026–2030)</p>
+          <p>Core Coursework: Problem Solving Techniques, Python Programming, Java Programming, Discrete Mathematics, Data Structures foundations.</p>
+        </div>
+        <div class="resume-section">
+          <h3>Technical Competencies</h3>
+          <ul class="resume-list">
+            <li><strong>Languages:</strong> Python, Java</li>
+            <li><strong>Core Strengths:</strong> Problem Solving, Algorithmic Logic, Object-Oriented Programming (OOP)</li>
+            <li><strong>Specialization:</strong> Artificial Intelligence &amp; Machine Learning Foundations</li>
+            <li><strong>Web &amp; Tools:</strong> HTML5, CSS3, JavaScript (ES6+), Git, GitHub, VS Code</li>
+          </ul>
+        </div>
+        <div class="resume-section">
+          <h3>Featured Focus &amp; Projects</h3>
+          <ul class="resume-list">
+            <li><strong>Algorithmic Search &amp; Sort Toolkit:</strong> Benchmarked search and sorting algorithms with complexity visualizations.</li>
+            <li><strong>Academic GPA &amp; Student Record System:</strong> Comprehensive Java OOP system with Collections and file management.</li>
+            <li><strong>AI/ML Predictive Exploratory Model:</strong> Python data analysis pipeline utilizing linear models and loss minimization.</li>
+          </ul>
+        </div>
+        <div class="resume-actions">
+          <button class="btn btn-primary" onclick="window.print()">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 6 2 18 2 18 9"></polyline><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+            <span>Print / Save as PDF</span>
+          </button>
+          <button class="btn btn-secondary" id="resume-modal-dismiss">Close Preview</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Relative link to JavaScript file -->
+  <script src="script.js" defer></script>
+</body>
+</html>
